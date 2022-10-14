@@ -1,3 +1,51 @@
+.section{
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: cover  ;
+    background-image:
+            // linear-gradient(rgba(47, 48, 58, 0.4),
+            //     rgba(47, 48, 58, 0.4)),
+            url("../images/bg/_tel-@1x.jpg");
+    
+        @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+        (min-resolution: 192dpi) and (max-width: 767px),
+        (min-resolution: 2dppx) and (max-width: 767px) {
+            background-image: 
+                url(../images/bg/_tel-@2x.jpg);
+        }
+    
+        @media screen and (min-width: 768px) {
+            background-image: 
+                url(../images/bg/_tab-@1x.jpg);
+        }
+    
+        @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) and (min-width: 768px),
+        (min-resolution: 2dppx) and (min-width: 768px) {
+            background-image: 
+                url(../images/bg/_tab-@2x.jpg);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            min-height: 600px;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            background-image: 
+                url(../images/bg/_desc-@1x.jpg);
+        }
+    
+        @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi) and (min-width: 1200px),
+        (min-resolution: 2dppx) and (min-width: 1200px) {
+            background-image: 
+                url(../images/bg/_desc-@2x.jpg);
+        }
+    
+    }
+
 .section-subtitle{
             font-family: 'Montserrat';
             font-style: normal;
@@ -52,23 +100,31 @@
 .products__list{
     @media screen and (min-width: 768px){
         display: flex;
+            gap: 16px;
     }
 }
 
 .products__item{
-    position: relative;
+    // position: relative;
 margin-bottom: 56px;
 padding-left: 40px;
 padding-right: 40px;
 padding-top: 123px;
 padding-bottom: 110px;
     min-width: 280px;
-    height: 420px;
+    height: 528px;
     
 
 @media screen and (min-width: 768px){
-    margin-right: 16px;
+    // margin-right: 16px;
     margin-bottom: 0;
+    min-width: 224px;
+        height: 548px;
+}
+
+@media screen and (min-width: 1200px){
+    // min-width: 370.16px;
+        height: 718.68px;
 }
 }
 
@@ -155,9 +211,13 @@ font-family: 'Montserrat';
 }
 
 .products__button{
-    position: absolute;
+    // position: absolute;
     bottom: 0;
-    width: 100%;
+    // width: 100%;
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 
     color: transparent;
     background-color: transparent;
